@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Bling",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "pathMappings": {
+                "/var/www/html": "${workspaceRoot}/",
+            },
+            "xdebugSettings": {
+                "max_children": 1024,
+                "max_data": 4096
+            },
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9003
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Checkout",
+            "url": "http://localhost:3002/vendas.checkout.php",
+            "webRoot": "${workspaceFolder}/bling/",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+                "webpack://bling/*": "${workspaceFolder}/*",
+            }
+        },
+    ]
+}
