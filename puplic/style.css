@@ -1,0 +1,34 @@
+.relatorio {
+    background: grey;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+}
+
+.error-text {
+ 
+    color: red;
+    padding-top: 42px;
+    font-size: 14px;
+}
+/* Remover o estilo de foco padrão */
+.form-check-input:focus + .form-check-label {
+    box-shadow: none; /* Remover sombra */
+}
+
+/* Adicionar seu próprio estilo de foco */
+.form-check-input:focus {
+    border-color: #ced4da; /* Adicionar uma cor de borda quando focado */
+    box-shadow: none; /* Remover sombra */
+}
+.x{
+    background-color: transparent;
+}
+::selection {
+    background-color: transparent;
+}

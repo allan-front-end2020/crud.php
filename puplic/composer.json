@@ -1,0 +1,8 @@
+{
+    "nome": "crud/automoveis",
+    "autoload":{
+     "psr-4":{
+        "App\\":"app/"
+     }
+    }
+}
